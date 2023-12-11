@@ -3,21 +3,22 @@ rmdir /Q /S ..\..\Vayu-Drivers-Release
 mkdir ..\..\Vayu-Drivers-Release
 
 echo @echo off > ..\OnlineUpdater_huaxing.cmd
-echo DriverUpdater_arm64.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_huaxing.txt >> ..\OnlineUpdater_huaxing.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_huaxing.txt >> ..\OnlineUpdater_huaxing.cmd
 
 echo @echo off > ..\OfflineUpdater_huaxing.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater_huaxing.cmd
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_huaxing.txt -p %%DrivePath%% >> ..\OfflineUpdater_huaxing.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_huaxing.txt -p %%DrivePath%% >> ..\OfflineUpdater_huaxing.cmd
 
 echo @echo off > ..\OnlineUpdater_tianma.cmd
-echo DriverUpdater_arm64.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_tianma.txt >> ..\OnlineUpdater_tianma.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_tianma.txt >> ..\OnlineUpdater_tianma.cmd
 
 echo @echo off > ..\OfflineUpdater_tianma.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater_tianma.cmd
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_tianma.txt -p %%DrivePath%% >> ..\OfflineUpdater_tianma.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu_tianma.txt -p %%DrivePath%% >> ..\OfflineUpdater_tianma.cmd
 
-copy DriverUpdater.exe ..\
-copy DriverUpdater_arm64.exe ..\
+copy DriverUpdater.ARM64.exe ..\
+copy DriverUpdater.AMD64.exe ..\
+copy DriverUpdater.X86.exe ..\
 
 echo apps\IPA\Dialer > filelist_vayu.txt
 echo apps\IPA\Chat >> filelist_vayu.txt
@@ -39,8 +40,9 @@ echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY >> filelist_vayu.txt
 echo definitions\Desktop\ARM64\Internal\vayu_huaxing.txt >> filelist_vayu.txt
 echo definitions\Desktop\ARM64\Internal\vayu_tianma.txt >> filelist_vayu.txt
 echo definitions\Desktop\ARM64\PE\vayu.txt >> filelist_vayu.txt
-echo DriverUpdater.exe >> filelist_vayu.txt
-echo DriverUpdater_arm64.exe >> filelist_vayu.txt
+echo DriverUpdater.ARM64.exe >> filelist_vayu.txt
+echo DriverUpdater.AMD64.exe >> filelist_vayu.txt
+echo DriverUpdater.X86.exe >> filelist_vayu.txt
 echo LICENSE.md >> filelist_vayu.txt
 echo OfflineUpdater_huaxing.cmd >> filelist_vayu.txt
 echo OnlineUpdater_huaxing.cmd >> filelist_vayu.txt
@@ -57,6 +59,7 @@ del ..\OfflineUpdater_huaxing.cmd
 del ..\OnlineUpdater_huaxing.cmd
 del ..\OfflineUpdater_tianma.cmd
 del ..\OnlineUpdater_tianma.cmd
-del ..\DriverUpdater.exe
-del ..\DriverUpdater_arm64.exe
+del ..\DriverUpdater.ARM64.exe
+del ..\DriverUpdater.AMD64.exe 
+del ..\DriverUpdater.X86.exe
 del filelist_vayu.txt
