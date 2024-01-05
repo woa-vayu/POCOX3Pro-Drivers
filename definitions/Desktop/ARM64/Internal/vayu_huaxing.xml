@@ -32,6 +32,8 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Subsystems" Name="x3p_subextcdsp.inf" ID="x3p_subextcdsp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Subsystems" Name="x3p_subextmpss.inf" ID="x3p_subextmpss"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Subsystems" Name="x3p_subextscss.inf" ID="x3p_subextscss"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\WLAN\China" Name="x3p_wpextwapi8150.inf" ID="x3p_wpextwapi8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\WLAN\Settings" Name="x3p_WlanMisc.inf" ID="x3p_WlanMisc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU_HUAXING\Drivers\Touch" Name="nt36xxx.inf" ID="nt36xxx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.VAYU_DESKTOP" Name="x3p_dx.inf" ID="x3p_dx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" ID="HalExtQCTimer8150"/>
