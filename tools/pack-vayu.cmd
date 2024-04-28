@@ -10,6 +10,7 @@ echo pause >> ..\OnlineUpdater.cmd
 
 echo @echo off > ..\OfflineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OfflineUpdater.cmd
+echo pushd "%%~dp0" ^&^& cd %%~dp0 >> ..\OfflineUpdater.cmd
 echo for /f %%%%a in ('wmic logicaldisk where "VolumeName='WINVAYU'" get deviceid^^^|find ":"')do set "DrivePath=%%%%a" >> ..\OfflineUpdater.cmd
 echo if not [%%DrivePath%%]==[] goto start >> ..\OfflineUpdater.cmd
 echo if [%%DrivePath%%]==[] echo Automatic WINVAYU detection failed! Enter Drive Letter manually. >> ..\OfflineUpdater.cmd
