@@ -1,7 +1,7 @@
 {
   "model": {
-    "family": "Phones",
-    "shortSku": "Vayu"
+    "family": "Foldables",
+    "shortSku": "Duo"
   },
   "capabilities": {
     "aboutSetting": {
@@ -123,6 +123,35 @@
         }
       }
     },
+    "eSimView": {
+      "name": "eSimView",
+      "visibility": "Show"
+    },
+    "eyeContactSetting": {
+      "name": "eyeContactSetting",
+      "visibility": "Discover",
+      "serviceInfo": {
+        "name": "EyeContact",
+        "nodeId": "ff1eb44f-92c2-46f9-a0da-8fdec67e41b5",
+        "propertyVerbs": [
+          {
+            "name": "IsSupported",
+            "permission": "ReadOnly",
+            "valueType": "BooleanType"
+          },
+          {
+            "name": "IsEyeContactEnabled",
+            "permission": "ReadWrite",
+            "valueType": "BooleanType"
+          }
+        ]
+      },
+      "properties": {
+        "serviceType": {
+          "stringValue": "Dm"
+        }
+      }
+    },
     "fwVersion": {
       "name": "fwVersion",
       "visibility": "Show",
@@ -150,6 +179,14 @@
         }
       }
     },
+    "penFRE": {
+      "name": "penFRE",
+      "visibility": "Show"
+    },
+    "penPressureSetting": {
+      "name": "penPressureSetting",
+      "visibility": "Show"
+    },
     "sdmaSetting": {
       "name": "sdmaSetting",
       "visibility": "Show",
@@ -162,6 +199,24 @@
     "smartChargingInfoView": {
       "name": "smartChargingInfoView",
       "visibility": "Show"
+    },
+    "supportView": {
+      "name": "supportView",
+      "visibility": "Show",
+      "properties": {
+        "Url": {
+          "stringValue": "https://go.microsoft.com/fwlink/?linkid=2007346"
+        }
+      }
+    },
+    "warrantyView": {
+      "name": "warrantyView",
+      "visibility": "Show",
+      "properties": {
+        "showOffer": {
+          "boolValue": true
+        }
+      }
     },
     "windowsUpdatesSetting": {
       "name": "windowsUpdatesSetting",
