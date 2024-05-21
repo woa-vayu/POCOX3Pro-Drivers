@@ -1,9 +1,11 @@
-## Surface Duo Drivers BSP - Version 2312.29 (Theta)
+## Surface Duo Drivers BSP - Version 2405.64 (Butterfly+)
+
+![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 12/10/2023 08:00 PM UTC+1
+**Released:** 05/20/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -14,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2312.29.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.64.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,46 +32,29 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2312.29)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.64)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
 ### Release notes
 
-What's new?
+- Resolves an issue that prevented Surface Duo 1 devices from booting correctly on clean installs since last update.
 
-- **_New!_**: You can now install drivers offline more easily, simply run "OfflineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
+- Enables fetching of calibration data for the two display vertical alignment and feeds it to the TouchPenProcessor module at runtime.
 
-- **_New!_**: You can now install drivers online! In other words, you can update the drivers on the device itself, while the OS is running. Currently this is work in progress and only supported if you have secure boot off (which normally is not the case). To update your drivers online within the os, simply run "OnlineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
+- Enables fetching of the device calibration data for Bluetooth, WiFi, Cellular so things like MAC Addresses are now accurate for your device.
 
-- **_New!_**: We added better application installation support
+- Enables fetching of the sensor calibration data for all device sensors. Note: The sensors should be not only more accurate but also way more reactive after you take this update. In particular, Posture Changes may feel __too__ reactive to some degree. Improvements will come in a later update!
 
-- **_New!_**: We now provide the matching version of driver updater so you can install the release more easily
+---
 
-#### Surface Duo (1st Gen)
+- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-What's new?
+- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
-- **_New!_**: We updated the audio calibration board configuration files. For now, you will notice audio is not yet enabled due to SPKR issues, we hope to bring this in next week for the anniversary release
+---
 
-- **_New!_**: We updated the fingerprint sensor driver. The driver is now 100% functional with _Secure Boot disabled_. We will try to find a way out of this caveat for the next release.
-
-- **_New!_**: We improved the installation process to be faster and not depend on extra install steps online. This should result in less errors and more reliability.
-
-- **_New!_**: We updated most Qualcomm Drivers to their latest version (v2040)
-
-- **_New!_**: We added support for additional Surface Docking Accessories (Surface Audio Dock) by default
-
-- **_New!_**: We updated all Surface Drivers to their latest version when applicable
-
-- **_New!_**: We introduced a prerelease driver for Surface Dial support. Support remains disabled in this release.
-
-- **_New!_**: We introduced touch support for Redstone 5 and earlier Windows Versions.
-
-__New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
-
-- Please download ```SurfaceDuo-Drivers-v2312.29-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2312.29-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- We are aware auto pairing of the pen will not work anymore on Windows 10, a fix is due in the next update.
 
 <details>
   <summary>Known issues</summary>
@@ -125,13 +110,6 @@ __New!__: We are now providing smaller download packages, specifically tailored 
 - sRGB is not available currently, and displays will not react to ICC profiles being applied.
   </p>
 </details>
-
-
-#### Surface Duo 2
-
-What's new?
-
-- Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
 ---
 
@@ -362,19 +340,7 @@ int main()
 <details>
   <summary>How to offline update an existing Windows Desktop installation</summary>
   <p>
-- Switch the device into mass storage.
-- Take note of the drive letter the Windows partition is using, here we will assume it got mounted as I:
-
-- Download [SurfaceDuo-Drivers-Full.zip] from https://github.com/WOA-Project/SurfaceDuo-Drivers/releases/latest
-- Extract said zip file to a folder of your choice, we will assume here we extracted it to C:\UpdatedDrivers
-- Download the DriverUpdater utility from https://github.com/WOA-Project/DriverUpdater/releases/latest
-- Open a command prompt as administrator, where the driver utility got downloaded
-
-- Execute the following command:
-  
-  DriverUpdater.exe -d C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\definitions\Desktop\ARM64\Internal\epsilon.txt -r C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\ -p I:\
-
-- Reboot the device, the device will now begin PnP setup once again, and hopefully you will be back soon enough to your desktop
+Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md
   </p>
 </details>
 
