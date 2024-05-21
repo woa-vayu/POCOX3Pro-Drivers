@@ -44,7 +44,6 @@ echo OnlineUpdater.cmd >> filelist_vayu.txt
 echo README.md >> filelist_vayu.txt
 
 cd ..
-"%ProgramFiles%\7-Zip\7z.exe" a -tzip ..\Vayu-Drivers-Release\Vayu-Drivers-Desktop.zip @tools\filelist_vayu.txt -scsWIN
 "%ProgramFiles%\7-Zip\7z.exe" a -t7z ..\Vayu-Drivers-Release\Vayu-Drivers-Desktop.7z @tools\filelist_vayu.txt -scsWIN
 cd tools
 
