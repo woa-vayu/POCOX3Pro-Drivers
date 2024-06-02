@@ -1,37 +1,15 @@
 
-# Windows Driver pack for Surface Duo platforms
+# Windows Driver pack for POCO X3 Pro
 
-![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/197420866-d3bb0534-c848-4cc2-a242-04dae48b0f6e.png)
+![pcock](https://github.com/woa-vayu-archive/src_vayu_windows/blob/main/2Poco%20X3%20Pro%20Windows.png?raw=true)
 
-This repository contains driver binary files for Surface Duo 1 and Surface Duo 2.
-All driver binary files form a board support package to be used on Surface Duo 1 and Surface Duo 2 devices to provide hardware support for the Windows operating system.
+This repository contains driver binary files for Poco X3 Pro based on Surface Duo drivers.
+All driver binary files form a board support package to be used on Poco X3 Pro devices to provide hardware support for the Windows operating system.
 
-These driver files are not perfect, typos may exist, feel free to file an issue on GitHub in case you found any.
-
-## Resources
+These driver files are not perfect, typos may exist, feel free to file an issue on GitHub in case you found any. These driver files are based on @gus33000 's drivers for Surface Duo. Huge thanks to @gus33000!
 
 ## Copyright, License, Disclaimers and end user license agreement
 
 **Below notice must be present in all redistributed portions of this software**
 
 Please see [LICENSE](LICENSE.md)
-
-## Installing manually
-
-For preserving charset encoding, please checkout with using:
-
-```
-git clone -c core.autocrlf=false https://github.com/WOA-Project/SurfaceDuo-Drivers
-```
-
----
-
-_**© 2020-2024 The Duo WOA Authors**_
-
-_Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo, Windows, Surface, Surface Duo, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft Corporation in the United States. Android is a registered trademark of Google LLC. Miracast is a registered trademark of the Wi-Fi Alliance. Other binaries may be copyright Qualcomm Incorporated and Microsoft Surface._
-
-_**Limited emergency calling**_
-
-_Running Windows on your Surface Duo is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
-
-_**Hello from Seattle (US), France, Italy.**_
