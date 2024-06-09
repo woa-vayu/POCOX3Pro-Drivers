@@ -1,7 +1,7 @@
 
 # Windows Driver pack for POCO X3 Pro
 
-![pcock](https://github.com/woa-vayu-archive/src_vayu_windows/blob/main/2Poco%20X3%20Pro%20Windows.png?raw=true)
+![pcock](https://github.com/woa-vayu-archive/src_vayu_windows/blob/main/2PocoX3ProWindows.png?raw=true)
 
 This repository contains driver binary files for Poco X3 Pro based on Surface Duo drivers.
 All driver binary files form a board support package to be used on Poco X3 Pro devices to provide hardware support for the Windows operating system.
