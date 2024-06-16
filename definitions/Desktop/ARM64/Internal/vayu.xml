@@ -38,9 +38,8 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Audio\Device" Name="x3p_auddevext.inf" ID="x3p_auddevext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\BatteryCurrentLimiter" Name="x3p_fgbclext.inf" ID="x3p_fgbclext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Bluetooth" Name="x3p_btext.inf" ID="x3p_btext"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Camera" Name="qccamauxsensor_extension8150.inf" ID="qccamauxsensor_extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Camera" Name="qccamfrontsensor_extension8150.inf" ID="qccamfrontsensor_extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Camera" Name="qccamrearsensor_extension8150.inf" ID="qccamrearsensor_extension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Camera" Name="x3p_camfrontext.inf" ID="x3p_camfrontext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Camera" Name="x3p_camrearext.inf" ID="x3p_camrearext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\HexagonLoader" Name="x3p_pilext.inf" ID="x3p_pilext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Sensors" Name="x3p_sensorsconfig.inf" ID="x3p_sensorsconfig"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.VAYU\Extensions\Subsystems" Name="x3p_mcfg.inf" ID="x3p_mcfg"/>
