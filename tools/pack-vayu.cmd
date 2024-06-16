@@ -21,6 +21,7 @@ echo if not "%%DrivePath:~1,1%%"==":" set DrivePath=%%DrivePath%%:>> ..\OfflineU
 echo :start >> ..\OfflineUpdater.cmd
 echo if not exist "%%DrivePath%%\Windows\" echo Error! Selected Disk "%%DrivePath%%" doesn't have any Windows installation. ^& pause ^& exit >> ..\OfflineUpdater.cmd
 echo .\tools\DriverUpdater\%%PROCESSOR_ARCHITECTURE%%\DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo pause >> ..\OfflineUpdater.cmd
 
 echo apps\IPA > filelist_vayu.txt
 echo CODE_OF_CONDUCT.md >> filelist_vayu.txt
