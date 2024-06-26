@@ -1,6 +1,7 @@
 @echo off
-rmdir /Q /S ..\..\Vayu-Drivers-Release
-mkdir ..\..\Vayu-Drivers-Release
+
+mkdir ..\..\POCOX3Pro-Drivers-Release
+del ..\..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.zip
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -45,7 +46,7 @@ echo OnlineUpdater.cmd >> filelist_vayu.txt
 echo README.md >> filelist_vayu.txt
 
 cd ..
-"%ProgramFiles%\7-Zip\7z.exe" a -t7z ..\Vayu-Drivers-Release\Vayu-Drivers-Desktop.7z @tools\filelist_vayu.txt -scsWIN
+"%ProgramFiles%\7-Zip\7z.exe" a -t7z ..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.7z @tools\filelist_vayu.txt -scsWIN
 cd tools
 
 del ..\OfflineUpdater.cmd
