@@ -60,6 +60,7 @@
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.VAYU\Drivers\Graphics" Name="X3PPanel.inf" ID="X3PPanel"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.VAYU\Drivers\Touch" Name="nt36xxx.inf" ID="nt36xxx"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.VAYU\Settings" Name="x3p_DeviceInfo.inf" ID="x3p_DeviceInfo"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.VAYU\Setup" Name="BypassNRO.inf" ID="BypassNRO"/>
 		    <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.VAYU\Setup" Name="desktopsetup.inf" ID="desktopsetup"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" ID="HalExtQCTimer8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer8150.inf" ID="HalExtQCWdogTimer8150"/>

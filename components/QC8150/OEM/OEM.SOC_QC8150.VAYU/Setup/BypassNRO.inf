@@ -1,0 +1,28 @@
+;
+; BypassNRO.inf
+;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %IHV%
+DriverVer   = 07/07/2024, 1.0.0.0
+CatalogFile = BypassNRO.cat
+PnpLockdown = 1
+
+;*****************************************
+; BypassNRO Install Section
+;*****************************************
+
+[DefaultInstall.NTarm64]
+Addreg = BypassNROReg
+
+[BypassNROReg]
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE, BypassNRO, %REG_DWORD%, 1
+
+[Strings]
+IHV     = "DuoWoA authors"
+DiskId1 = "Bypass Network Registration in the Out of Box Experience Flow Settings Package Installation Disk #1"
+
+REG_DWORD = 0x00010001
