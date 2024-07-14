@@ -1,7 +1,7 @@
 @echo off
 
 mkdir ..\..\POCOX3Pro-Drivers-Release
-del ..\..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.zip
+del ..\..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.7z
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -13,6 +13,8 @@ echo @echo off > ..\OfflineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OfflineUpdater.cmd
 echo pushd "%%~dp0" ^&^& cd %%~dp0 >> ..\OfflineUpdater.cmd
 echo for /f %%%%a in ('wmic logicaldisk where "VolumeName='WINVAYU'" get deviceid^^^|find ":"')do set "DrivePath=%%%%a" >> ..\OfflineUpdater.cmd
+echo if not [%%DrivePath%%]==[] goto start >> ..\OfflineUpdater.cmd
+echo for /f %%%%a in ('wmic logicaldisk where "VolumeName='MainOS'" get deviceid^^^|find ":"')do set "DrivePath=%%%%a" >> ..\OfflineUpdater.cmd
 echo if not [%%DrivePath%%]==[] goto start >> ..\OfflineUpdater.cmd
 echo if [%%DrivePath%%]==[] echo Automatic WINVAYU detection failed! Enter Drive Letter manually. >> ..\OfflineUpdater.cmd
 echo :sdisk >> ..\OfflineUpdater.cmd
@@ -34,7 +36,7 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_va
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_vayu.txt
 echo components\QC8150\Device\DEVICE.SOC_QC8150.VAYU >> filelist_vayu.txt
 echo components\QC8150\Device\DEVICE.SOC_QC8150.VAYU_MINIMAL >> filelist_vayu.txt
-echo components\QC8150\OEM\OEM.SOC_QC8150.VAYU >> filelist_vayu.txt
+echo components\QC8150\OEM\OEM.SOC_QC8150.POCO >> filelist_vayu.txt
 echo components\QC8150\Graphics\GRAPHICS.SOC_QC8150.VAYU_DESKTOP >> filelist_vayu.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_vayu.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_vayu.txt
