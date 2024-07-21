@@ -3,12 +3,12 @@
     "hw_platform": ["MTP", "Dragon", "Surf", "VAYU"],
     "soc_id": ["291", "246", "305", "321", "339"]
   },
-  "adux1050_0":{
+  "adux1050":{
     "owner": "sns_adux1050",
     ".proximity":{
       "owner": "sns_adux1050",
       ".config":{
-        "owner": "sns_adux1050_0",
+        "owner": "sns_adux1050",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "0"
         },
