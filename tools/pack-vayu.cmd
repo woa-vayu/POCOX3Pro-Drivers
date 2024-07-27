@@ -49,7 +49,7 @@ echo OnlineUpdater.cmd >> filelist_vayu.txt
 echo README.md >> filelist_vayu.txt
 
 cd ..
-"%ProgramFiles%\7-Zip\7z.exe" a -t7z ..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.7z @tools\filelist_vayu.txt -scsWIN
+"tools\7z.exe" a -t7z ..\POCOX3Pro-Drivers-Release\POCOX3Pro-Drivers-Desktop.7z @tools\filelist_vayu.txt -scsWIN
 cd tools
 
 del ..\OfflineUpdater.cmd
