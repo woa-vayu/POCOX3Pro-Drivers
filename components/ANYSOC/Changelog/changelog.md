@@ -1,22 +1,16 @@
-## Surface Duo BSP - Version 2408.1 (Chucky)
-
-> [!CAUTION]
-> When booting windows for the second time, after the "Getting ready" phase, it is **Normal** for your device to end in a black screen
-> DO NOT panic, DO NOT TRY TO FORCE REBOOT THE DEVICE! Leave it for 5 mins, press the power button once, or close it and reopen it, or plug in an usb cable and unplug it, do this as many times as you want, EVENTUALLY, the device will wake up. DO NOT try to reboot. Just try a few times and it will work, we promise it will not stay in a black screen. Just be a bit patient.
+## POCO X3 Pro BSP - Version 2408.1 (Chucky)
 
 > [!NOTE]
 > Higher thermals in Windows is currently expected and is not dangerous
 
-![image](https://github.com/WOA-Project/SurfaceDuo-Releases/assets/3755345/8682d8e4-015b-4179-9dfe-434f868754ba)
-
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 07/07/2024 11:00 PM UTC+2
+**Released:** 08/04/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
-You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Status.md
+You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/Status-en.md
   </p>
 </details>
 
@@ -25,7 +19,7 @@ You can view compatibility for this release, along with important information an
   <p>
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
-- ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
+- ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/InstallWindows-en/DualBoot.md
 
 - ⚠️ You need to backup your original boot image for OTAs to work with Android. When you get an OTA, you will want to revert your boot image for the update to work, or you'll have to use an official OTA recovery package.
   </p>
@@ -33,17 +27,14 @@ You can view compatibility for this release, along with important information an
 
 ---
 
-_More information will be available later in this changelog_
-
 _FFU images will be made available later this week_
 
 ---
 
-[▶️ Install Surface Duo (1st Gen) UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo1.md)
+[▶️ Install POCO X3 Pro UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/InstallWindows-en/InstallWindows.md)
 
-[▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2408.1)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of POCO X3 Pro UEFI and Drivers (both got updated with v2408.1)](https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/Update-en/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -64,52 +55,14 @@ These files are to be used when clean installing Windows on your Surface Duo or 
 <tr>
 <td>
 
-[SurfaceDuo-Drivers-v2408.1-Desktop-Epsilon.7z](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/SurfaceDuo-Drivers-v2408.1-Desktop-Epsilon.7z)
+[POCOX3Pro-Drivers-v2408.1-Desktop.7z](https://github.com/woa-vayu/POCOX3Pro-Releases/releases/download/2408.1/POCOX3Pro-Drivers-v2408.1-Desktop.7z)
 </td>
 <td>
 
-- [Fast Boot](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.Fast.Boot.zip)
-- [Dual Boot for FW 2022.902.48 (Latest OTA for Surface Duo (1st Gen) devices)](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.Dual.Boot.zip)
-- [FD for making your own Dual Boot Image](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.FD.for.making.your.own.Dual.Boot.Image.zip)
+- [UEFI](https://github.com/woa-vayu/POCOX3Pro-Releases/releases/download/2408.1/POCO.X3.Pro.UEFI-v2408.1.img)
 </td>
-<td>Surface Duo (1st Gen)</td>
+<td>POCO X3 Pro</td>
 <td>Windows 10 Version 2004 and higher</td>
-<td><details>
-
-N/A
-</details></td>
-</tr>
-<tr>
-<td>
-
-[SurfaceDuo-Drivers-v2408.1-Desktop-Zeta.7z](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/SurfaceDuo-Drivers-v2408.1-Desktop-Zeta.7z)
-</td>
-<td>
-
-- [Fast Boot](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.2.UEFI-v2408.1.Fast.Boot.zip)
-- [Dual Boot for FW 2023.501.202 (Latest OTA for Surface Duo 2 devices)](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.2.UEFI-v2408.1.Dual.Boot.zip)
-- [FD for making your own Dual Boot Image](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.2.UEFI-v2408.1.FD.for.making.your.own.Dual.Boot.Image.zip)
-</td>
-<td>Surface Duo 2</td>
-<td>Windows 11 Version 24H2 and higher</td>
-<td><details>
-
-N/A
-</details></td>
-</tr>
-<tr>
-<td>
-
-[SurfaceDuo-Drivers-v2408.1-Desktop-Epsilon.7z](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/SurfaceDuo-Drivers-v2408.1-Desktop-Epsilon.7z)
-</td>
-<td>
-
-- [Fast Boot](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.Secure.Boot.Disabled.Fast.Boot.zip)
-- [Dual Boot for FW 2022.902.48 (Latest OTA for Surface Duo (1st Gen) devices)](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.Secure.Boot.Disabled.Dual.Boot.zip)
-- [FD for making your own Dual Boot Image](https://github.com/WOA-Project/SurfaceDuo-Releases/releases/download/2408.1/Surface.Duo.1st.Gen.UEFI-v2408.1.Secure.Boot.Disabled.FD.for.making.your.own.Dual.Boot.Image.zip)
-</td>
-<td>Surface Duo (1st Gen)</td>
-<td>Windows 10 Version 1803 to Windows 10 Version 1909</td>
 <td><details>
 
 N/A
@@ -121,16 +74,16 @@ N/A
 
 - Download the Driver File onto your Computer
 - Extract it
-- Connect your Surface Duo to your computer in Mass Storage mode
+- Connect your POCO X3 Pro to your computer in Mass Storage mode
 - Double Tap on the `OfflineUpdater.cmd` file
-- Enter the Drive Letter for the Surface Duo Windows Partition (See This PC for knowing this)
+- Enter the Drive Letter for the POCO X3 Pro Windows Partition (See This PC for knowing this)
 - Wait til the processes finishes
 - Reboot your device
 - Boot the device using the new UEFI version linked alongside the Driver File above
 
 #### If you are updating an existing installation:
 
-- Download the Driver File onto your Surface Duo
+- Download the Driver File onto your POCO X3 Pro
 - Extract it
 - Double Tap on the `OnlineUpdater.cmd` file
 - Wait til the processes finishes
@@ -145,9 +98,9 @@ In case you're having issues/troubles updating within the OS on the device, you 
 
 ### Full Flash Update Files
 
-We're now providing FFU files directly from the release page outside of Telegram. The FFU files are also still uploaded on Telegram FFU channel, and they match this very specific release.
+We're providing FFU files on [Telegram FFU channel](https://t.me/woavayuffu)
 
-Learn more about FFU files: [FFU Flashing Guide](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/FlashingFFU.md)
+Learn more about FFU files: [FFU Flashing Guide](https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/InstallWindows-en/FlashingFFU.md)
 
 Unfortunately, FFU files for this very version are not yet available. Download the FFU Files from the previous release alongside the previous release UEFI or come back later to this page for when the files will be uploaded.
 
@@ -158,56 +111,30 @@ Unfortunately, FFU files for this very version are not yet available. Download t
 >[!NOTE]
 >This release includes both UEFI packages and Driver packages
 
-Common:
+- Removes defaultinstall (primitive INF packages) as they are being phased out.
 
-- **New!** Pressing volume down in the UEFI will now bring in a boot menu allowing you to go back to android, go to android recovery, bootloader and more with ease
+- Default Windows wallpaper now matches the OEM
 
-- **New!** The volume up button now launches the FFU Loader/UFP application in the UEFI for flashing FFU files. Previously this was bound to the Volume UP button.
+- Resolves long-standing issues across various Windows versions.
 
-- **New!** The SecureBoot enabled UEFI variable is now able to boot Windows 10X just fine
+- Adds minimal support for Windows 18363/18362. You need to use a secure boot disabled variant of the UEFI in order to boot these. We yet don't provide any suport for those Windows 10 builds.
 
-- **New!** Updated boot logo
+- Addresses boot issues on the latest Windows 10 version (VB).
 
-- **New!** Windows 11 will now display an option to skip connecting to a wifi or cellular network during oobe by default.
+- Fixes broken Vulkan support in GPU driver.
 
-Surface Duo (1st Gen):
-
-- **New!** Improved panel detection and reporting in the operating system
-
-- **New!** Resolved an issue leading to windows crash during specific windows updates
-
-- **New!** AT&T users do not have to dump their modemst1/2 partitions anymore to have Cellular working ok in windows with non AT&T sims, this is now handled by the driver stack properly
-
-- **New!** The driver stack is now 99% DCH compliant with Windows Core OS
-
-- **New!** Updated the GPU Vulkan/OpenCL ICDs to build 59
-
-- **New!** Tweaks to the digitizer configuration database, but nothing fully fixing the calibration just yet.
+- GPU driver now supports HEVC encoding.
 
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2408.1-Desktop-Epsilon.7z``` if you want drivers for Surface Duo 1
-
-- Please download ```SurfaceDuo-Drivers-v2408.1-Desktop-Zeta.7z``` if you want drivers for Surface Duo 2
+- Please download ```POCOX3Pro-Drivers-v2408.1-Desktop.7z``` if you want drivers for POCO X3 Pro
 
 ---
-
-- We are aware auto pairing of the pen will not work anymore on Windows 10, a fix is due in the next update.
 
 <details>
   <summary>Known issues</summary>
   <p>
-- Installing Gallium Semester Insider builds may lead to a black screen on second boot of the OS, simply press the power button to continue.
-
-- Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
-
 - The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
-
-- The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
-
-- Enhanced auto rotation is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
-
-- Brightness control is glitchy on both displays.
 
 - On device speakers are not functional.
 
@@ -223,259 +150,18 @@ Surface Duo (1st Gen):
 
 - USB-C Billboard devices will not currently work.
 
-- External Display Stream support will not currently work.
-
-- Additional information provided by the posture sensor is currently not available for public consumption. This includes peek events.
-
-- Digitizers will not react to the device being folded over.
-
-- Displays will not react to the device being folded over most of the time.
-
 - Physical device data is incorrect.
-
-- Digitizers aren't calibrated correctly.
 
 - Flipping the device is not smooth.
 
-- Users upgrading from releases older than the January ones may want to clean install again.
+- Users upgrading from releases older than the April ones may want to clean install again.
 
 - Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
 
-- In some cases, booting the UEFI image may lead to "static screen" effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes.
-
 - Windows Recovery environment lacks drivers unless Windows has performed a Feature Update at least once.
 
-- sRGB is not available currently, and displays will not react to ICC profiles being applied.
   </p>
 </details>
-
----
-
-<details>
-  <summary>Accessing Foldable Sensors from your applications</summary>
-  <p>
-In order to currently access the sensor data given by the foldable sensors, you need to use the following apis:
-
-
-- Windows.Devices.Sensors.HingeAngleSensor*
-- Windows.Internal.Devices.Sensors.FlipSensor* (2)
-- Windows.Internal.System.TwoPanelHingePostureDevice* (2)
-
-
-(2): These apis require the use of an externally sourced winmd available from https://github.com/ADeltaX/InternalWinMD/blob/master/%23winmd/Windows.Internal.Devices.Sensors.winmd
-
-
-In the future, further apis will be functional (specifically under the Windows.System.Preview namespace). Consider this an early "thing".
-
-
-The following API may be used to determine if your app is used on a dual screen device: https://docs.microsoft.com/en-us/uwp/api/windows.ui.windowmanagement.windowingenvironment.getdisplayregions?view=winrt-22621
-
-The following API may be used to determine on which display region your app is currently being shown: https://docs.microsoft.com/en-us/uwp/api/windows.ui.windowmanagement.appwindow.getdisplayregions?view=winrt-22621
-
-The following API may be used to move your application to the other display: https://docs.microsoft.com/en-us/uwp/api/windows.ui.windowmanagement.appwindow.requestmoverelativetodisplayregion?view=winrt-22621
-
-THe following API may be used to move your application to a specific display: https://docs.microsoft.com/en-us/uwp/api/windows.ui.windowmanagement.appwindow.requestmovetodisplayregion?view=winrt-22621
-
-The following API may be used for spanning purposes: https://docs.microsoft.com/en-us/uwp/api/windows.ui.windowmanagement.appwindow.requestsize?view=winrt-22621
-
-The Windowing Environment for Windows Desktop editions (outside of tablet mode) is Overlapped. Tiled is used for Tablet Mode and Windows Core OS's ModernPC.
-
-
-### Code Samples
-
-```cpp
-#include <iostream>
-#include <windows.h>
-#include <winrt/Windows.Foundation.h>
-#include <winrt/Windows.Internal.Devices.Sensors.h>
-#include <winrt/Windows.Internal.System.h>
-#include <winrt/Windows.System.Preview.h>
-#include <winrt/Windows.UI.WindowManagement.h>
-#include <winrt/Windows.Foundation.Collections.h>
-
-using namespace std;
-using namespace winrt;
-using namespace Windows::Foundation;
-using namespace Windows::Internal::Devices::Sensors;
-using namespace Windows::Internal::System;
-using namespace Windows::System::Preview;
-using namespace Windows::UI::WindowManagement;
-using namespace Windows::Foundation::Collections;
-
-VOID OnFoldSensorReadingChanged(FoldSensor const&, FoldSensorReadingChangedEventArgs const& args)
-{
-	try {
-		printf("Fold sensor state changed.\n");
-		switch (args.Reading().GestureState())
-		{
-		case GestureState::Started:
-			std::cout << "Fold started\n" << std::endl;
-			break;
-		case GestureState::Completed:
-			std::cout << "Fold stopped\n" << std::endl;
-			break;
-		case GestureState::Cancelled:
-			std::cout << "Fold cancelled\n" << std::endl;
-			break;
-		case GestureState::Unknown:
-			std::cout << "Fold unknown\n" << std::endl;
-			break;
-		}
-
-		for (auto panel : args.Reading().ContributingPanel())
-		{
-			printf("Panel: %s\n", to_string(panel).c_str());
-		}
-		
-		std::cout << "Initial angle " << args.Reading().InitialAngle() << std::endl;
-		std::cout << "Final angle " << args.Reading().FinalAngle() << std::endl;
-		
-		switch (args.Reading().FoldType())
-		{
-		case FoldType::Closing:
-			std::cout << "Fold Closing\n" << std::endl;
-			break;
-		case FoldType::Opening:
-			std::cout << "Fold Opening\n" << std::endl;
-			break;
-		case FoldType::NotDetected:
-			std::cout << "Fold NotDetected\n" << std::endl;
-			break;
-		}
-	}
-	catch (...) {}
-}
-
-VOID PrintDetails(TwoPanelHingedDevicePostureReading const& args)
-{
-	try {
-		std::cout << "Panel1 " << args.Panel1Id().c_str() << "\n" << std::endl;
-		std::cout << "Panel2 " << args.Panel2Id().c_str() << "\n" << std::endl;
-
-		std::cout << "Panel1 Orientation " << (int)args.Panel1Orientation() << "\n" << std::endl;
-		std::cout << "Panel2 Orientation " << (int)args.Panel2Orientation() << "\n" << std::endl;
-
-		switch (args.HingeState())
-		{
-		case Windows::Internal::System::HingeState::Unknown:
-			std::cout << "Hinge1State Unknown\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Closed:
-			std::cout << "Hinge1State Closed\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Concave:
-			std::cout << "Hinge1State Concave\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Flat:
-			std::cout << "Hinge1State Flat\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Convex:
-			std::cout << "Hinge1State Convex\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Full:
-			std::cout << "Hinge1State Full\n" << std::endl;
-			break;
-		}
-	}
-	catch (...) {}
-}
-
-VOID OnPostureChanged(TwoPanelHingedDevicePosture const&, TwoPanelHingedDevicePostureReadingChangedEventArgs const& args)
-{
-	try {
-		printf("Posture sensor state changed.\n");
-		PrintDetails(args.Reading());
-	}
-	catch (...) {}
-}
-
-VOID OnSensorReadingChanged(FlipSensor const&, FlipSensorReadingChangedEventArgs const& args)
-{
-	try {
-		printf("Flip sensor state changed.\n");
-		switch (args.Reading().GestureState())
-		{
-		case GestureState::Started:
-			std::cout << "Flip started\n" << std::endl;
-			break;
-		case GestureState::Completed:
-			std::cout << "Flip stopped\n" << std::endl;
-			break;
-		case GestureState::Cancelled:
-			std::cout << "Flip cancelled\n" << std::endl;
-			break;
-		case GestureState::Unknown:
-			std::cout << "Flip unknown\n" << std::endl;
-			break;
-		}
-	}
-	catch (...) {}
-}
-
-int main()
-{
-    init_apartment();
-	printf("Trying to get flip sensor.\n");
-	try {
-		FlipSensor flip = FlipSensor::GetDefaultAsync().get();
-		if (flip == nullptr)
-		{
-			printf("Flip sensor not found.\n");
-		}
-		else
-		{
-			printf("Starting listening session for flip sensor.\n");
-			flip.ReadingChanged(OnSensorReadingChanged);
-		}
-		printf("Press any key to stop\n");
-		std::cin.get();
-	}
-	catch (...) {}
-
-	printf("Trying to get posture sensor.\n");
-	try {
-		TwoPanelHingedDevicePosture Posture = TwoPanelHingedDevicePosture::GetDefaultAsync().get();
-		if (Posture == nullptr)
-		{
-			printf("Posture sensor not found.\n");
-		}
-		else
-		{
-			auto curpst = Posture.GetCurrentPostureAsync().get();
-			if (curpst != nullptr)
-			{
-				PrintDetails(curpst);
-			}
-			printf("Starting listening session for Posture sensor.\n");
-			Posture.PostureChanged(OnPostureChanged);
-		}
-		printf("Press any key to stop\n");
-		std::cin.get();
-	}
-	catch (...) {}
-
-	printf("Trying to get fold sensor.\n");
-	try {
-		FoldSensor fold = FoldSensor::GetDefaultAsync().get();
-		if (fold == nullptr)
-		{
-			printf("Fold sensor not found.\n");
-		}
-		else
-		{
-			printf("Starting listening session for fold sensor.\n");
-			fold.ReadingChanged(OnFoldSensorReadingChanged);
-		}
-		printf("Press any key to stop\n");
-		std::cin.get();
-	}
-	catch (...) {}
-}
-```
-  </p>
-</details>
-
----
 
 ### Dual Boot Information
 
@@ -493,9 +179,9 @@ int main()
 
 Flashing these images on any other version may brick your phone or render touch unusable! Make backups of your original boot partitions and ALWAYS test before flashing permanently using "fastboot boot image.img"!.
 
-If you do not currently run above firmware versions, please also follow https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/DualBoot.md.
+If you do not currently run above firmware versions, please also follow https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/InstallWindows/DualBoot.md.
 
-For more information on dual boot, manual steps on how to craft such image file, and how to flash it, and use it, please visit https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/DualBoot.md.
+For more information on dual boot, manual steps on how to craft such image file, and how to flash it, and use it, please visit https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/InstallWindows/DualBoot.md.
 
 We do not recommend inexperienced users without advanced knowledge of IT/Command prompts to do this ever. You may find it very hard and mess up your device easily if you do it wrong. Also important to note Android OTAs will not work anymore with a custom boot.img flashed onto the device and you will need to reflash your original backup for them to work or else, you'll be forced to recover with an OTA zip package from https://aka.ms/sri if one is even available for your current version or higher.
 
@@ -518,32 +204,17 @@ You are currently not running stock microsoft android version 2022.902.48; you a
 
 ---
 
-### Hey wow, that's a lot of UEFI images right here! Which one do I even download?
-
-- FastBoot -> Image intended to be used with fastboot boot uefi.img to directly boot into the UEFI this way via your computer, use this one if you're following the installation guides right now
-- Dual Boot -> Image intended to be flashed onto boot after checking compatibility with above table to make sure you meet the usability criteria and your device will work fine
-- FD -> File needed to make your own custom dual boot images in case you do not meet the compatibility table, using the guide to do so (https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/DualBoot.md)
-
-Use the files without SecureBoot Disabled in their filenames if and only if:
-- I am booting a version of Windows higher than build 18363 (the latest Windows 10 feature update, Windows 11, Windows 11 Version 22H2 etc..)
-
-Only use the files with SecureBoot Disabled in their filenames if and only if:
-- I am booting Windows 10 build 18363 or lower on my device (Please also turn on testsigning in BCD in order to boot)
-- I am booting Windows 10X on my device
-- I am booting a linux distribution
----
-
 <details>
   <summary>How to offline update an existing Windows Desktop installation</summary>
   <p>
-Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md
+Please follow the steps detailed at https://github.com/woa-vayu/POCOX3Pro-Guides/blob/main/Update-en/UpdateDriversAndUEFI.md
   </p>
 </details>
 
 <details>
   <summary>How to install Windows Desktop on internal Storage</summary>
   <p>
-Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides
+Please follow the steps detailed at https://github.com/woa-vayu/POCOX3Pro-Guides
   </p>
 </details>
 
