@@ -26,7 +26,9 @@ echo if not exist "%%DrivePath%%\Windows\" echo Error! Selected Disk "%%DrivePat
 echo .\tools\DriverUpdater\%%PROCESSOR_ARCHITECTURE%%\DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\vayu.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
 echo pause >> ..\OfflineUpdater.cmd
 
-echo apps\IPA > filelist_vayu.txt
+echo apps\IPA\Frameworks >> filelist_vayu.txt
+echo apps\IPA\Chat >> filelist_vayu.txt
+echo apps\IPA\CommsEnhancement >> filelist_vayu.txt
 echo CODE_OF_CONDUCT.md >> filelist_vayu.txt
 echo components\ANYSOC\Changelog >> filelist_vayu.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE >> filelist_vayu.txt
@@ -34,12 +36,8 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS >> filelist_vayu.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_vayu.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_vayu.txt
-echo components\QC8150\Device\DEVICE.SOC_QC8150.VAYU >> filelist_vayu.txt
-echo components\QC8150\Device\DEVICE.SOC_QC8150.VAYU_MINIMAL >> filelist_vayu.txt
-echo components\QC8150\OEM\OEM.SOC_QC8150.XIAOMI >> filelist_vayu.txt
-echo components\QC8150\Graphics\GRAPHICS.SOC_QC8150.VAYU_DESKTOP >> filelist_vayu.txt
-echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_vayu.txt
-echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_vayu.txt
+echo components\Devices\Vayu >> filelist_vayu.txt
+echo components\QC8150 >> filelist_vayu.txt
 echo definitions\Desktop\ARM64\Internal\vayu.xml >> filelist_vayu.txt
 echo definitions\Desktop\ARM64\PE\vayu.xml >> filelist_vayu.txt
 echo tools\DriverUpdater >> filelist_vayu.txt
