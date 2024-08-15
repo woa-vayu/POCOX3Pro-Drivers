@@ -71,7 +71,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Audio\Slimbus" Name="qcslimbus8150.inf" ID="qcslimbus8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Battery\BatteryCurrentLimiter" Name="qcfgbcl8150.inf" ID="qcfgbcl8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8150.inf" ID="qcbtaddvscregistry8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\AuxilarySensor" Name="qccamauxsensor8150.inf" ID="qccamauxsensor8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\ISP" Name="qccamisp8150.inf" ID="qccamisp8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\JPEGEncoder" Name="qccamjpege_ffu8150.inf" ID="qccamjpege_ffu8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\MIPICSI" Name="qccammipicsi8150.inf" ID="qccammipicsi8150"/>
@@ -114,9 +113,11 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\Apps" Name="qcpmicapps8150.inf" ID="qcpmicapps8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\Core" Name="qcpmic8150.inf" ID="qcpmic8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\Extension" Name="qcpmicext8150.inf" ID="qcpmicext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\ExternalIC" Name="qcpmicEIC8150.inf" ID="qcpmicEIC8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\GLINK" Name="QcPmicGlink8150.inf" ID="QcPmicGlink8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\GPIO" Name="qcpmicgpio8150.inf" ID="qcpmicgpio8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PMIC\TypeCController" Name="qcpmictcc8150.inf" ID="qcpmictcc8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\PowerManagement" Name="qcpep.wp8150.inf" ID="qcpep.wp8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\Provisioning" Name="QcSOCPartition.inf" ID="QcSOCPartition"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\ResetPower\CrashDumpInjector" Name="qccdi8150.inf" ID="qccdi8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\SOC\ResetPower\ResetProtectionEnabler" Name="qcrpen8150.inf" ID="qcrpen8150"/>
@@ -142,6 +143,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Camera\AuxilarySensor" Name="qccamauxsensor_extension8150.inf" ID="qccamauxsensor_extension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Cellular\EMBComponentExtension" Name="qcwmrilextension8150.inf" ID="qcwmrilextension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\FMRadio" Name="qcfmtransportextension8150.inf" ID="qcfmtransportextension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\PMIC\Apps" Name="qcpmicappsext8150.inf" ID="qcpmicappsext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\PowerManagement" Name="qcpepextension8150.inf" ID="qcpepextension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\USB\DualRoleExtension" Name="qcursext.inf" ID="qcursext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Libraries\Cellular\RadioInterfaceLayer" Name="qcWMRil8150.inf" ID="qcWMRil8150"/>
