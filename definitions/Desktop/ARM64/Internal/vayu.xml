@@ -16,7 +16,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\AudioCoreExt" Name="AudioCoreExt.inf" ID="AudioCoreExt"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\EMB" Name="emb.inf" ID="emb"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
-			<!--DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Drivers\Biometric" Name="goodix_wbdi_spi.inf" ID="goodix_wbdi_spi"/-->
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Drivers\Graphics\Monitor" Name="x3p_panel.inf" ID="x3p_panel"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Drivers\Touch" Name="nt36xxx.inf" ID="nt36xxx"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Audio\AudMiniport" Name="x3p_audmini.inf" ID="x3p_audmini"/>
@@ -31,7 +30,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camrearsensor.inf" ID="x3p_camrearsensor"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Cellular\IPA" Name="x3p_ipa.inf" ID="x3p_ipa"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Graphics\DXKM" Name="x3p_dx.inf" ID="x3p_dx"/>
-			<!--DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\SecurityProcessor" Name="qcsp8150.inf" ID="qcsp8150"/-->
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Sensors\SSC" Name="x3p_sensors.inf" ID="x3p_sensors"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\SOC\I2C" Name="x3p_i2c.inf" ID="x3p_i2c"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\SOC\SPI" Name="x3p_spi.inf" ID="x3p_spi"/>
