@@ -18,6 +18,12 @@
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Drivers\Graphics\Monitor" Name="x3p_panel.inf" ID="x3p_panel"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Drivers\Touch" Name="nt36xxx.inf" ID="nt36xxx"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Extensions\Storage" Name="XiaomiSfuKLUEG8UHDCB0E1ExtnPackage.inf" ID="XiaomiSfuKLUEG8UHDCB0E1ExtnPackage"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Extensions\Storage" Name="XiaomiSfuMT256GARAT4U31ExtnPackage.inf" ID="XiaomiSfuMT256GARAT4U31ExtnPackage"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Extensions\Storage" Name="XiaomiSfuSDINFDK4ExtnPackage.inf" ID="XiaomiSfuSDINFDK4ExtnPackage"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Firmware\Storage" Name="XiaomiSfuKLUEG8UHDCB0E1FwPackage.inf" ID="XiaomiSfuKLUEG8UHDCB0E1FwPackage"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Firmware\Storage" Name="XiaomiSfuMT256GARAT4U31FwPackage.inf" ID="XiaomiSfuMT256GARAT4U31FwPackage"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Firmware\Storage" Name="XiaomiSfuSDINFDK4FwPackage.inf" ID="XiaomiSfuSDINFDK4FwPackage"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Audio\AudMiniport" Name="x3p_audmini.inf" ID="x3p_audmini"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Audio\Device" Name="x3p_auddev.inf" ID="x3p_auddev"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Battery" Name="x3p_battminiclass.inf" ID="x3p_battminiclass"/>
