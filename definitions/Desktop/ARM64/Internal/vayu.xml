@@ -29,11 +29,12 @@
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Battery" Name="x3p_battminiclass.inf" ID="x3p_battminiclass"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Battery" Name="x3p_battmngr.inf" ID="x3p_battmngr"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Bluetooth\BTFMUART" Name="x3p_btfmuart.inf" ID="x3p_btfmuart"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camavs.inf" ID="x3p_camavs"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camflash.inf" ID="x3p_camflash"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camfrontsensor.inf" ID="x3p_camfrontsensor"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camisp.inf" ID="x3p_camisp"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera" Name="x3p_camrearsensor.inf" ID="x3p_camrearsensor"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\AuxilarySensor" Name="x3p_camauxsensor.inf" ID="x3p_camauxsensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\AVStream" Name="x3p_camavs.inf" ID="x3p_camavs"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\Flash" Name="x3p_camflash.inf" ID="x3p_camflash"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\FrontSensor" Name="x3p_camfrontsensor.inf" ID="x3p_camfrontsensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\ISP" Name="x3p_camisp.inf" ID="x3p_camisp"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Camera\RearSensor" Name="x3p_camrearsensor.inf" ID="x3p_camrearsensor"/>
 			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Cellular\IPA" Name="x3p_ipa.inf" ID="x3p_ipa"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Graphics\DXKM" Name="x3p_dx.inf" ID="x3p_dx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Drivers\Sensors\SSC" Name="x3p_sensors.inf" ID="x3p_sensors"/>
@@ -47,6 +48,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Audio\AudMiniport" Name="x3p_audminiext.inf" ID="x3p_audminiext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Audio\Device" Name="x3p_auddevext.inf" ID="x3p_auddevext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Bluetooth" Name="x3p_btext.inf" ID="x3p_btext"/>
+			<DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Camera\AuxilarySensor" Name="x3p_camauxext.inf" ID="x3p_camauxext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Camera\FrontSensor" Name="x3p_camfrontext.inf" ID="x3p_camfrontext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Camera\RearSensor" Name="x3p_camrearext.inf" ID="x3p_camrearext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\Devices\Vayu\Platform\Extensions\Cellular\RILComponentExtension" Name="x3p_WMRil_mbb_ext.inf" ID="x3p_WMRil_mbb_ext"/>
@@ -75,8 +77,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Audio\Slimbus" Name="qcslimbus8150.inf" ID="qcslimbus8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Battery\BatteryCurrentLimiter" Name="qcfgbcl8150.inf" ID="qcfgbcl8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8150.inf" ID="qcbtaddvscregistry8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\AuxilarySensor" Name="qccamauxsensor8150.inf" ID="qccamauxsensor8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\ISP" Name="qccamisp8150.inf" ID="qccamisp8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\JPEGEncoder" Name="qccamjpege_ffu8150.inf" ID="qccamjpege_ffu8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\MIPICSI" Name="qccammipicsi8150.inf" ID="qccammipicsi8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\Camera\Platform" Name="qccamplatform8150.inf" ID="qccamplatform8150"/>
@@ -145,7 +145,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Drivers\VibrationMotor" Name="qchwnhaptics8150.inf" ID="qchwnhaptics8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Audio\ListenSoundModel\Calibration" Name="QCListenSM_swc_ext8150.inf" ID="QCListenSM_swc_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Audio\ListenSoundModel\ComponentExtension" Name="QCListenSM8150.inf" ID="QCListenSM8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Camera\AuxilarySensor" Name="qccamauxsensor_extension8150.inf" ID="qccamauxsensor_extension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\Cellular\EMBComponentExtension" Name="qcwmrilextension8150.inf" ID="qcwmrilextension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\FMRadio" Name="qcfmtransportextension8150.inf" ID="qcfmtransportextension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Extensions\PowerManagement" Name="qcpepextension8150.inf" ID="qcpepextension8150"/>
